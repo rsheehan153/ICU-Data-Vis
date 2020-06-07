@@ -18,7 +18,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '12.x'
 
     - name: npm install, build, and test
       run: |
@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'icudatavisualization'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_84a225726cb84b94a4ff4f06b636f2a9 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_75044182883b42778f80bc082ef3765a }}
         package: .
