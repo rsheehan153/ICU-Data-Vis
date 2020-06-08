@@ -1,7 +1,7 @@
 var graph;
 var dataset;
 
-d3.csv('public/data/ICU.csv', function(data) {
+d3.csv('data/ICU.csv', function(data) {
 dataset = data;
 
   graph = d3.parcoords()('#wrapper')
